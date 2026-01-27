@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Instacart Customer Segmentation - Philip Davis</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Philip</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Instacart Customer Segmentation</h2>
+        <p>Python analysis to identify high-value customer segments and improve food accessibility</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- Main Content Area -->
+          <div class="col-lg-8">
+            <div class="portfolio-details-image mb-4">
+              <img src="assets/img/masonry-portfolio/Instacart.png" class="img-fluid" alt="Instacart Customer Segmentation">
+            </div>
+
+            <h3>The Challenge</h3>
+            <p>
+              Instacart, facing increased competition in the grocery delivery market, needed to better understand their diverse customer base to develop more targeted marketing strategies. With limited marketing budgets, the company couldn't afford broad, unfocused campaigns. They needed clear customer segments with distinct purchasing behaviors to guide personalized marketing, product recommendations, and pricing strategies that would improve both revenue and customer satisfaction.
+            </p>
+
+            <h3>The Approach</h3>
+            <p>
+              I performed an exploratory data analysis using Python (pandas, NumPy) on 5 original datasets including customer profiles, order history, product catalogs, and department sales. After merging these datasets on customer and product IDs, I analyzed purchasing patterns across different dimensions: order frequency, time-of-day preferences, and department preferences.
+            </p>
+            <p>
+              Customer segmentation involved identifying natural groupings based on purchasing behavior—frequency of orders, average basket value, product category preferences, and shopping time patterns. I used Python's data manipulation capabilities to calculate customer lifetime value metrics and categorize customers into actionable segments that marketing teams could target with specific campaigns.
+            </p>
+
+            <h3>Technical Hurdles & Solutions</h3>
+            <p>
+              <strong>Dataset Integration:</strong> Merging 5+ separate datasets with millions of records required careful handling. I merged datasets when useful, used efficient pandas operations to minimize memory usage, and created checkpoint files to avoid re-running lengthy merge operations during iterative analysis.
+            </p>
+            <p>
+              <strong>Defining Meaningful Segments:</strong> Initial segmentation attempts produced categories that were statistically distinct but not actionable for new marketing campaigns. I refined the categories by analyzing the data and made customer profiles based on said data. The final segmentation focused on family-oriented customers who represented high lifetime value and showed clear, consistent purchasing patterns that made them easy to target.
+            </p>
+            <p>
+              <strong>Balancing Complexity and Accessibility:</strong> The stakeholders needed recommendations they could implement, not just complex statistical findings. Rather than creating 10+ micro-segments, I identified 3-4 primary customer types with clear characteristics and actionable differences in their needs. I also simplified pricing recommendations to focus on reducing unneeded complexity.
+            </p>
+
+            <h3>The Results</h3>
+            <p>
+              The analysis identified family-oriented customer segments as high-value, characterized by larger basket sizes, predictable shopping patterns, and high retention rates. Department analysis revealed Produce, Dairy/Eggs, Snacks, and Beverages as top performers, providing clear guidance for promotional focus and inventory prioritization.
+            </p>
+            <p>
+              My recommendations focused on two key areas: (1) targeting marketing efforts toward family-oriented segments who showed the highest lifetime value and clearest needs, and (2) simplifying Instacart's pricing structure to improve food accessibility. Rather than complex dynamic pricing, I recommended transparent, consistent pricing that would build trust with price-sensitive customers while still maintaining margins on high-value segments.
+            </p>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Customer Analytics</li>
+                <li><strong>Tools</strong>: Python, pandas, NumPy, Excel</li>
+                <li><strong>Techniques</strong>: Data Merging, Exploratory Analysis, Customer Segmentation</li>
+                <li><strong>Date</strong>: 2025</li>
+                <li><strong>Context</strong>: CareerFoundry Project</li>
+              </ul>
+            </div>
+            
+            <div class="portfolio-description mt-4" data-aos="fade-up" data-aos-delay="300">
+              <h3>Key Findings</h3>
+              <p>
+                Family-oriented customer segments showed highest lifetime value with predictable purchasing patterns, making them ideal targets for focused marketing campaigns and retention efforts.
+              </p>
+              <p>
+                Top-performing departments (Produce, Dairy/Eggs, Snacks, Beverages) provide clear priorities for promotional spending and supplier negotiations.
+              </p>
+            </div>
+
+            <div class="portfolio-description mt-4" data-aos="fade-up" data-aos-delay="300">
+              <h3>Impact</h3>
+              <p>
+                Customer segmentation enabled targeted marketing strategies, allowing Instacart to allocate limited marketing budgets to segments with highest ROI potential rather than broad, inefficient campaigns.
+              </p>
+              <p>
+                Pricing simplification recommendations balanced business objectives with social impact goals—improving food accessibility for price-sensitive customers while maintaining profitability on high-value segments.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Philip Davis</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <!-- <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div> -->
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
